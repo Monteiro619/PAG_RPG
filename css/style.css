@@ -1,0 +1,41 @@
+body {
+  background-color: #343A40;
+}
+
+
+.carousel-item img {
+    height: 200px;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-item img {
+      height: 400px;
+    }
+  }
+
+#backToTop {
+    background-color: black;
+    color:white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    display: none; 
+    z-index: 1000; 
+    border-radius: 50%;
+}
+#backToTop.show {
+    display: block; 
+}
+
+#backToTop {
+    position: fixed; /* Fica fixo na tela */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    border-radius: 50%; 
+    background-color: gray; /* Cor de fundo cinza */
+    color: white; 
+}
+
+#backToTop:hover {
+    background-color: darkgray; /* Cor ao passar o mouse */
+}

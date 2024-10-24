@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de RPG - Medieval Fantasia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                border: none;
+                box-shadow: none;
+            }
+            button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ficha de RPG - Medieval Fantasia</h1>
+
+        <form id="rpgForm">
+            <h2>Informações Básicas</h2>
+            <label for="nome">Nome do Personagem:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="classe">Classe:</label>
+            <input type="text" id="classe" name="classe">
+
+            <label for="raca">Raça:</label>
+            <input type="text" id="raca" name="raca">
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade">
+
+            <label for="alinhamento">Alinhamento:</label>
+            <input type="text" id="alinhamento" name="alinhamento">
+
+            <h2>Atributos</h2>
+            <label for="forca">Força:</label>
+            <input type="number" id="forca" name="forca">
+
+            <label for="destreza">Destreza:</label>
+            <input type="number" id="destreza" name="destreza">
+
+            <label for="constituicao">Constituição:</label>
+            <input type="number" id="constituicao" name="constituicao">
+
+            <label for="inteligencia">Inteligência:</label>
+            <input type="number" id="inteligencia" name="inteligencia">
+
+            <label for="sabedoria">Sabedoria:</label>
+            <input type="number" id="sabedoria" name="sabedoria">
+
+            <label for="carisma">Carisma:</label>
+            <input type="number" id="carisma" name="carisma">
+
+            <h2>Informações Adicionais</h2>
+            <label for="pv">Pontos de Vida (PV):</label>
+            <input type="number" id="pv" name="pv">
+
+            <label for="pm">Pontos de Magia (PM):</label>
+            <input type="number" id="pm" name="pm">
+
+            <label for="nivel">Nível:</label>
+            <input type="number" id="nivel" name="nivel">
+
+            <label for="equipamentos">Equipamentos:</label>
+            <textarea id="equipamentos" name="equipamentos" rows="4" placeholder="Armas, armaduras, itens"></textarea>
+
+            <label for="habilidades">Habilidades da Classe:</label>
+            <textarea id="habilidades" name="habilidades" rows="3" placeholder="Habilidades"></textarea>
+
+            <label for="magias">Magias (se aplicável):</label>
+            <textarea id="magias" name="magias" rows="3" placeholder="Magias"></textarea>
+
+            <label for="historia">História do Personagem:</label>
+            <textarea id="historia" name="historia" rows="4" placeholder="Breve história do personagem"></textarea>
+
+            <button type="button" onclick="imprimirFicha()">Imprimir Ficha</button>
+        </form>
+    </div>
+
+    <script>
+        function imprimirFicha() {
+            // Salvando os dados do formulário
+            const form = document.getElementById('rpgForm');
+            const dados = new FormData(form);
+
+            // Convertendo os dados em uma string formatada para a impressão
+            let ficha = '';
+            dados.forEach((value, key) => {
+                ficha += `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}\n`;
+            });
+
+            // Cria uma nova janela para impressão
+            const printWindow = window.open('', '', 'width=800,height=600');
+            printWindow.document.write('<html><head><title>Ficha de RPG</title></head><body>');
+            printWindow.document.write('<pre>' + ficha + '</pre>');
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+    </script>
+
+</body>
+</html>

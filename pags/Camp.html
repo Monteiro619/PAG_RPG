@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Bootstrap-->
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/JS.JS"></script>
+    <!-- Link para Bootstrap js funcionar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+
+    <title>RPG Medieval Fantasia</title>
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegação -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/ícone.png" alt="" width="30" height="24">
+                RPG Medieval
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Campanhas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+
+    <!-- Carrossel -->
+
+    <div class="container-fluid p-0 ">
+        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/Map2.jpg" class="d-block w-100" style="height: 600px; object-fit: cover;"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/_e75650e3-2174-4876-a546-72c5c2b0daa7.jpg" class="d-block w-100"
+                        style="height: 600px; object-fit: cover;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/_a6125632-1dc2-4960-8c77-72c45b32270e.jpg" class="d-block w-100"
+                        style="height: 600px; object-fit: cover;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Conteudo -->
+
+    <div class="container mt-4">
+        <h1 class="text-white">Bem-vindo ao RPG de Mesa Medieval</h1>
+        <p class="text-white">
+            O RPG de mesa (Role-Playing Game) é uma forma interativa de contar histórias, onde os jogadores assumem
+            papéis de personagens em um mundo fictício. Em um RPG de mesa medieval, as aventuras se desenrolam em
+            cenários inspirados na Idade Média, repletos de magia, monstros e heróis. Cada jogador cria um personagem,
+            escolhendo uma classe e uma raça, e participa de campanhas que podem durar uma única sessão ou se estender
+            por meses, dependendo da narrativa e do estilo de jogo.
+        </p>
+        <h3 class="text-white">Campanhas</h3>
+        <p class="text-white">
+            As campanhas são a espinha dorsal dos RPGs, consistindo em uma série de aventuras interligadas que permitem
+            aos jogadores explorar o mundo, enfrentar desafios e desenvolver seus personagens ao longo do tempo. Um
+            mestre de jogo (ou narrador) guia os jogadores, descrevendo o cenário e controlando os NPCs (personagens não
+            jogáveis), enquanto os jogadores tomam decisões que moldam a história.
+        </p>
+        <h3 class="text-white">Diferentes Dados</h3>
+        <p class="text-white">
+            O sistema de jogo é frequentemente guiado pelo uso de dados poliedrais, comumente conhecidos como dados RPG.
+            Os dados mais usados incluem o d4 (quatro lados), d6 (seis lados), d8 (oito lados), d10 (dez lados), d12
+            (doze lados) e d20 (vinte lados). O dado mais icônico é o d20, que é utilizado para determinar o sucesso ou
+            fracasso das ações dos personagens, desde ataques até testes de habilidade.
+        </p>
+        <p class="text-white">
+            Ao explorar o mundo dos RPGs de mesa, você descobrirá a emoção de criar histórias memoráveis, desenvolver
+            personagens complexos e se envolver em aventuras épicas ao lado de amigos. Prepare-se para embarcar em uma
+            jornada cheia de imaginação e diversão!
+        </p>
+    </div>
+
+    <section id="classes">
+    <div class="container mt-4">
+        <h1 class="text-white">Bem-vindo as Classes mais utilizadas</h1>
+        <p class="text-white">Explore nossas classes e escolha a classe que você mais gostou</p>
+        <div class="row">
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Arqueiro.jpg" class="card-img-top" alt="Arqueiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Arqueiro</h5>
+                        <p class="card-text">Mestres do arco e flecha, guerreios astutos, se destacam em combates à
+                            distância.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Precisão com arcos, maestria com
+                            adagas, táticas de
+                            emboscada e agilidade em combate à distância.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Barbaro.jpg" class="card-img-top" alt="Bárbaro">
+                    <div class="card-body">
+                        <h5 class="card-title">Bárbaro</h5>
+                        <p class="card-text">Guerreiros selvagens que confiam em sua fúria e força bruta em batalha.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Habilidade de entrar em "frenesi",
+                            aumentando sua força e resistência física, sacrificando defesas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Mago.jpg" class="card-img-top" alt="Mago">
+                    <div class="card-body">
+                        <h5 class="card-title">Mago</h5>
+                        <p class="card-text">Mestres das artes arcanas, manipulam magia para derrotar seus inimigos ou
+                            proteger seus aliados.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Especialistas em conjurações
+                            mágicas, capazes de lançar feitiços poderosos, mas fisicamente frágeis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Ranger.jpg" class="card-img-top" alt="Ranger">
+                    <div class="card-body">
+                        <h5 class="card-title">Ranger</h5>
+                        <p class="card-text">Caçadores e exploradores da natureza, os Rangers têm uma profunda conexão
+                            com o ambiente selvagem.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Mestres em combate a distância.
+                            Também são habilidosos em rastreamento, sobrevivência e táticas de guerrilha.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Segundo Card -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Inventor.jpg" class="card-img-top" alt="Inventor">
+                    <div class="card-body">
+                        <h5 class="card-title">Inventor</h5>
+                        <p class="card-text">Mestres da criação e inovação, os Inventores utilizam seu conhecimento em
+                            engenharia e alquimia para criar engenhocas e armas únicas no campo de batalha.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Alta criatividade, habilidade de
+                            construir dispositivos, armadilhas e armas improvisadas, além de criar poções alquímicas com
+                            efeitos variados.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Necromante.jpg" class="card-img-top" alt="Necromante">
+                    <div class="card-body">
+                        <h5 class="card-title">Necromante</h5>
+                        <p class="card-text">Mestres das artes sombrias, os Necromantes controlam a vida e a morte,
+                            invocando mortos-vivos e manipulando energias necromânticas para seus propósitos.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Capacidade de invocar e controlar
+                            esqueletos e outras criaturas mortas, drenagem de vida, feitiços de maldição e manipulação
+                            de forças sombrias.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Samurai.jpg" class="card-img-top" alt="Samurai">
+                    <div class="card-body">
+                        <h5 class="card-title">Samurai</h5>
+                        <p class="card-text">Guerreiros honrados e disciplinados, os Samurais são mestres da espada e
+                            defensores de um código de honra, lutando com precisão e lealdade.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Habilidade excepcional com katana,
+                            técnicas de combate ágil, forte senso de honra e dever, e capacidades estratégicas em
+                            batalha.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/Guerreiro.jpg" class="card-img-top" alt="Guerreiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Guerreiro</h5>
+                        <p class="card-text">Combatentes robustos e versáteis, os Guerreiros são mestres em diversas
+                            armas e armaduras, capazes de enfrentar qualquer desafio em batalha.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Características: </strong>Alta resistência física,
+                            proficiência em múltiplas armas, habilidades de combate corpo a corpo e capacidade de
+                            proteger aliados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="container my-4">
+            <h1 class="text-center mb-4 text-white">Raças do RPG Medieval</h1>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Humanos</h5>
+                            <p class="card-text">Os Humanos são conhecidos por sua versatilidade, ambição e determinação. Suas habilidades de adaptação os tornam uma raça poderosa e resiliente em qualquer campo.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Anões</h5>
+                            <p class="card-text">Anões são robustos e duradouros, conhecidos por sua habilidade em construir fortificações e forjar poderosas armas. Eles têm uma grande afinidade com pedras e metais.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Elfos</h5>
+                            <p class="card-text">Os Elfos são graciosos, inteligentes e com uma profunda conexão com a natureza. Eles se destacam em magia e possuem uma vida longa, o que lhes dá vasto conhecimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Halflings</h5>
+                            <p class="card-text">Pequenos e ágeis, os Halflings são conhecidos por sua furtividade e habilidade de passar despercebidos. Eles vivem vidas tranquilas, mas não têm medo de grandes aventuras.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Orcs</h5>
+                            <p class="card-text">Orcs são guerreiros ferozes, conhecidos por sua força bruta e habilidade em combate. Apesar de muitas vezes vistos como bárbaros, eles têm uma cultura rica e valorosa.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Draconatos</h5>
+                            <p class="card-text">Os Draconatos são descendentes de dragões e têm uma aparência dracônica. Sua herança lhes dá habilidades de combate poderosas e a capacidade de soprar fogo ou outros elementos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Tieflings</h5>
+                            <p class="card-text">Os Tieflings são descendentes de humanos e demônios, possuindo características demoníacas como pele colorida e chifres. Eles são frequentemente mal compreendidos, mas têm um forte senso de individualidade.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Gnomos</h5>
+                            <p class="card-text">Gnomos são conhecidos por sua inteligência e habilidades em engenharia e magia. Pequenos e curiosos, eles possuem um grande amor pela inovação e pela invenção.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Fey</h5>
+                            <p class="card-text">Os Fey são seres mágicos ligados à natureza, conhecidos por sua beleza etérea e truques. Eles habitam reinos encantados e têm uma ligação profunda com as forças da magia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Cyborgs</h5>
+                            <p class="card-text">Cyborgs são seres que combinam características orgânicas e tecnológicas, utilizando implantes e máquinas para melhorar suas habilidades. Eles são a ponte entre a magia e a tecnologia.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Elementais</h5>
+                            <p class="card-text">Os Elementais são criaturas feitas de um dos quatro elementos: terra, água, fogo e ar. Eles são a personificação das forças da natureza e possuem habilidades relacionadas a seu elemento.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Anjos</h5>
+                            <p class="card-text">Os Anjos são seres celestiais que representam a luz e a justiça. Eles possuem habilidades mágicas poderosas e lutam contra as forças do mal, guiando os justos em suas jornadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Bestas</h5>
+                            <p class="card-text">Bestas são criaturas míticas que possuem traços de animais e humanoides. Elas são conhecidas por sua força e instintos selvagens, muitas vezes agindo como protetores da natureza.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Golems</h5>
+                            <p class="card-text">Golems são seres criados a partir de materiais inanimados, como pedra ou argila, animados por magia. Eles são frequentemente utilizados como guardiões e servos leais.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Druidas</h5>
+                            <p class="card-text">Druidas são seres místicos que têm uma conexão profunda com a natureza e a magia. Eles são protetores do mundo natural e podem se transformar em animais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Botão de voltar ao topo -->
+
+        <button id="backToTop" class="btn btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <i class="bi bi-arrow-up">↑</i>
+        </button>
+
+    <!-- Scripts do Bootstrap 5 -->
+
+
+
+</body>
+
+</html>
